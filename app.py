@@ -49,9 +49,9 @@ def upload():
         f.save(file_path)
         preds = model_predict(file_path, model)
         if preds==0:
-            result='the given picture doesnt have osteoarthitis'
+            result='the given picture doesnt have osteoarthritis'
         else:
-            result='the given xray contains osteoarthitis'
+            result='the given xray contains osteoarthritis'
         return result
     return None
 
